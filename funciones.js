@@ -4,16 +4,16 @@
 }
  */
 
-const saludo = () => {console.log()};
+/* const saludo = () => {console.log()};
 
-saludo();
+saludo(); */
 
 /* function suma(x,y)
 {
  return x + y;
 } */
 /* const suma = (x,y) => x+y; */
-const suma = (x,y) =>{
+/* const suma = (x,y) =>{
     console.log(x+y);
     return x+y}
 
@@ -51,7 +51,7 @@ printerArrow("Hello")
 
 const cubo = (n) => n*n*n
 
-console.log(cubo(3));
+console.log(cubo(3)); */
 
 
 
@@ -63,14 +63,53 @@ console.log(cubo(3));
     }
 )
  */
-let arrayNumber = [1,2,3,4,5,6]
+/* let arrayNumber = [8,22,12,33,45,21]
 let arr2 = [];
 
-arrayNumber.forEach((value,index) =>
+//forEach ejemplos
+ arrayNumber.forEach((value,index) =>
 {
     console.log(index);
     console.log(value*2);
     arr2.push(value*2)   
 })
-arr2.forEach
+console.log(arrayNumber);
+console.log(arr2); 
 
+//Ejemplos de .map
+
+ let newArr = [1,2,3,4,5]
+
+ let myDoubleArrayNumber = newArr.map(
+    function(value,index){
+        return value*2
+    }
+ )
+
+ console.log(myDoubleArrayNumber); */
+//Usar siempre funcion arrow.
+//Usamos map cuando queremos devolver valores y forEach cuando solo queremos recorrerlo.
+
+
+/* let arr4 = [23,32,12,54,21,32]
+
+let arr3 = arr4.map(function(value){
+    return value
+})
+console.log(arr3);
+let arr2 = arr4.map((value)=>value*2)
+
+console.log(arr2); */
+
+//Metodo filter
+
+//Si tengo varios objetos u elementos, puedo iterar, filtrar o utilizar metodos si los meto en un array
+
+let obj1 = {nombre:"Pepe",edad:90}
+let obj2 = {nombre:"Lucas",edad:33}
+let obj3 = {nombre:"Raul",edad:55}
+
+let arrayString = [obj1,obj2,obj3]
+
+let arrayFiltered = arrayString.filter((value)=> value.edad > 35);
+console.log(arrayFiltered);
