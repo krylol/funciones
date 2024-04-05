@@ -105,11 +105,43 @@ console.log(arr2); */
 
 //Si tengo varios objetos u elementos, puedo iterar, filtrar o utilizar metodos si los meto en un array
 
-let obj1 = {nombre:"Pepe",edad:90}
+/* let obj1 = {nombre:"Pepe",edad:90}
 let obj2 = {nombre:"Lucas",edad:33}
 let obj3 = {nombre:"Raul",edad:55}
 
 let arrayString = [obj1,obj2,obj3]
 
 let arrayFiltered = arrayString.filter((value)=> value.edad > 35);
-console.log(arrayFiltered);
+console.log(arrayFiltered); */
+
+//Metodo reduce
+
+/* let arrayNumber = [1,2,3,4,5]
+
+let myAdd = arrayNumber.reduce(
+    function(accumulator,value,index)
+    {
+        return accumulator + value
+    }
+)
+console.log(myAdd); */
+
+
+//Valores por defecto
+/* function tablaCinco(x,y=2)
+{
+    console.log(x * y);
+}
+
+tablaCinco(3) */
+
+/* const tablaCinco = (x, y=2) => x*y
+
+console.log(tablaCinco(5,8));
+
+//Spread Operator
+
+let suma = (x,y,z,t) => x+y+z+t;
+let miParams = [8,24,36,110]
+
+console.log(suma(...miParams)); */
